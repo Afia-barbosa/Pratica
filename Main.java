@@ -1,24 +1,21 @@
-package org.example;
-
 public class Main {
     public static void main(String[] args) {
-        String string = "AfiadaSilvABarbosa";
-        int contador = 0;
+        int INDICE = 12;
+        int SOMA = 0;
+        int K = 1;
 
-        //Varrer cada caractere na String
-        for (int i = 0; i < string.length(); i++) {
-            char caractere = string.charAt(i);
-            //Verificando se o caractere é "a" ou "A"
-            if (caractere == 'a' || caractere == 'A') {
-                contador++;
-            }
+        // Enquanto K for menor que INDICE
+        while (K < INDICE) {
+            K = K + 1; // Incrementa K
+            SOMA = SOMA + K; // Adiciona K a SOMA
+            System.out.println("K: " + K); // Imprime o valor de K
         }
 
-        //Caso a foi encontrada
-        if (contador > 0) {
-            System.out.println("A letra 'a' aparece " + contador + " vezes na String");
-        } else {
-            System.out.println("A letra 'a' nao foi encontrada na String");
-        }
+        // Imprime o valor de SOMA
+        System.out.println("O valor de SOMA é: " + SOMA);
+
+
+        // a soma é 77
+
     }
 }
